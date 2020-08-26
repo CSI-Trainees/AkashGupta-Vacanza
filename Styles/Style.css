@@ -211,26 +211,38 @@ body{
 }
 #Options
 {
+    width: fit-content;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     justify-items: center;
 }
 .Option
 {
-   font-family: sans-serif;
-   height: fit-content;
-   width: fit-content;
-   border : 2px solid white;
-   margin: 20px;
-   padding: 10px;
-   border-radius:35px;
-}
-.OptionText
-{
-    color: white;
-    font-size: 35px;
+    width:fit-content;
+    height: fit-content;
+    display: block;
     text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    border: 1px solid white;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.Option > span
+{
+    /*visibility: hidden;*/
+    width: 0px;
+    height: 100%;
+    transition: width 0.4s;  
+}
+.Option:hover > span 
+{
+  display: inline-block;
+  height: 100%;
+  width: 25px;
 }
 #Image1
 {
