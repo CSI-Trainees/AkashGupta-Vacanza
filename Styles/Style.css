@@ -398,3 +398,169 @@ body{
     background-color: rgb(7, 90, 7);
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+@media screen and (max-width:900px)
+{
+    /*Second Part Design*/
+    .ContentBox
+    {
+        padding: 5px 10px 5px 10px;
+    }
+    .ContentBox .Paracontent
+    {
+        font-size: 15px;
+        margin: 5px 5px 5px 5px;
+    }
+    .ContentBox .Heading
+    {
+        font-size: 25px;
+        margin: 5px 5px 5px 5px;
+    }
+    .ContentBox .Heading2
+   {
+    font-size: 25px;
+    margin: 2px;
+   }
+    #Image1
+    {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+        
+    }
+    #Image2
+    {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+        
+    }
+    #Image3
+    {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+        
+    }
+    .Rules
+    {
+        margin: 10px 5px 5px 5px;
+        padding: 5px 10px 5px 10px;
+    }
+    #VacLogo
+   {
+    max-height:150px;
+    max-width: 150px;
+   }
+   #Vac
+   {
+    width: 500px;
+    height: 90px;
+   }
+   .Option
+   {
+       font-size: 20px;
+   }
+   .CSI p
+  {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .Navcircle
+ {
+    height: 30px;
+    width: 30px;
+ }
+ .ContactIcon
+{
+    width: 10%;
+    margin: 5px;
+    height: 100%;
+}
+.NavLink
+{
+  font-size: 15px;
+}
+}
+/*for 600px*/
+@media screen and (max-width:600px)
+{
+    .ContentBox
+    {
+        padding: 5px 10px 5px 10px;
+    }
+    .ContentBox .Paracontent
+    {
+        color: white;
+        font-size: 15px;
+        margin: 5px 5px 5px 5px;
+    }
+    .ContentBox .Heading
+    {
+        color: white;
+        font-size: 25px;
+        margin: 5px 5px 5px 5px;
+    }
+    .ContentBox .Heading2
+   {
+     color: white;
+     font-size: 25px;
+     margin: 2px;
+   }
+   #Image1
+    {
+        display: none;
+        
+    }
+    #Image2
+    {
+        display: none;
+    }
+    #Image3
+    {
+        display: none;
+    }
+    .ContentBox
+    {
+        margin: 0px;
+        background-color: rgba(0,0,0,0.5);
+    }
+    #ContentBox1
+    {
+        background-image: url("../Drawable/vintage.jpg");
+        background-size: cover;
+    }
+    #ContentBox2
+    {
+        background-image: url("../Drawable/quiz.jpg");
+        background-size: cover;
+    }
+    #ContentBox3
+    {
+        background-image: url("../Drawable/magic.jpg");
+        background-size: cover;
+    }
+    .ContactIcon
+   {
+    margin: 12px;
+    height: 100%;
+   }
+   .Rules
+  {
+    border: 1px solid white;
+    color: white;
+    transition: all 0.2s;
+  }
+  .Rules:hover
+  {
+      transform: translate(0px,-5px);
+      background-color: rgba(0,0,0,0);
+  }
+  #VacLogo
+  {
+   max-height:110px;
+   max-width: 110px;
+  }
+  #Vac
+  {
+   width: 450px;
+   height: 80px;
+  }
+  .Option
+  {
+      font-size: 15px;
+  }
+}
