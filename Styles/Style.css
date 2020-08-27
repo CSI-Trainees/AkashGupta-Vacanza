@@ -155,15 +155,16 @@ body{
     position: fixed;
     width: 100%;
     z-index:2000;
-    padding:2px;
+    padding:20px;
 }
 .NavBox
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 .NavLink
 {
+    visibility: hidden;
     font-family: sans-serif;
     font-size: 20px;
     display: block;
@@ -172,22 +173,95 @@ body{
     padding:5px 10px 5px 10px;
     text-decoration: none;
     color: white;
+    opacity: 0.6;
     background-color: black;
+}
+.NavLink:hover
+{
+    opacity: 1;
 }
 .Navcircle
 {
-    height: 60px;
-    width: 60px;
+    position: relative;
+    height: 35px;
+    width: 35px;
     display: flex;
 }
 .toggler
 {
+    position: absolute;
     z-index:2000;
     cursor: pointer;
     height: 100%;
     width: 100%;
-    z-index: 2;
+    z-index: 4;
     opacity: 0;
+}
+.Hamburger
+{
+    position: absolute;
+    z-index:3 ;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 2px;
+    border-radius: 50px;
+}
+.Hamburger > div
+{
+   position: relative;
+   width: 75%;
+   height: 2px;
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition : all 1s;
+}
+
+/* style for top and bottom lines*/
+.Hamburger > div:before , .Hamburger > div:after
+{
+   content:'';
+   position: absolute;
+   z-index: 1;
+   top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+  transition : all 0.1s;
+}
+/*moves line down*/
+.Hamburger > div:after
+{
+    top:10px;
+}
+.Navcircle > .toggler:hover:not(:checked) + .Hamburger > div::before
+{
+  top:-12px;
+}
+.Navcircle > .toggler:hover:not(:checked) + .Hamburger > div::after
+{
+  top: 12px;
+}
+.toggler:checked + .Hamburger > div
+{
+    transform: rotate(135deg);
+}
+.toggler:checked + .Hamburger > div:before ,
+.toggler:checked + .Hamburger > div:after 
+{
+   top : 0px;
+   transform: rotate(90deg);
+}
+.toggler:checked:hover + .Hamburger > div
+{
+    transform: rotate(225deg);
 }
 #VacLogo
 {
@@ -236,7 +310,7 @@ body{
     /*visibility: hidden;*/
     width: 0px;
     height: 100%;
-    transition: width 0.4s;  
+    transition: width 0.2s linear;
 }
 .Option:hover > span 
 {
