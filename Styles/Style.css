@@ -276,8 +276,8 @@ body{
 }
 #Vac
 {
-    width: 675px;
-    height: 150px;
+    width:675px;
+    height:150px;
 }
 .Logo
 {
@@ -398,7 +398,7 @@ body{
     background-color: rgb(7, 90, 7);
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-@media screen and (max-width:900px)
+@media only screen and (max-width:900px)
 {
     /*Second Part Design*/
     .ContentBox
@@ -476,7 +476,7 @@ body{
 }
 }
 /*for 600px*/
-@media screen and (max-width:600px)
+@media only screen and (max-width:600px)
 {
     .ContentBox
     {
@@ -551,16 +551,16 @@ body{
   }
   #VacLogo
   {
-   max-height:110px;
-   max-width: 110px;
+   max-height:90px;
+   max-width: 90px;
   }
   #Vac
   {
-   width: 450px;
-   height: 80px;
+   width: 220px;
+   height: 50px;
   }
   .Option
   {
-      font-size: 15px;
+      font-size: 10px;
   }
 }
