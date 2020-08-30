@@ -339,6 +339,10 @@ body{
     font-weight: 600;
     color: #fff;
 }
+.CSI > a
+{
+    text-decoration: none;
+}
 .CSI
 {
     flex-shrink: 0;
